@@ -16,16 +16,19 @@ const authorLink = "https://bsky.app/profile/em-squared.bsky.social";
 export default {
   head() {
     const { asPath } = useRouter();
-    const { frontMatter } = useConfig();
-    const url = process.env.URL + `${asPath}`;
-    const pageTitle = frontMatter.title || projectTitle;
+    const { title, frontMatter } = useConfig();
+    const url = `${process.env.URL}${asPath}`;
+    const pageTitle =
+      title && asPath !== "/"
+        ? `${title} | ${projectTitle}`
+        : `${projectTitle}`;
     const pageDescription =
       frontMatter.description || "Jouer pour voir ce qui arrive";
 
     return (
       <>
         <title>{pageTitle}</title>
-        <description>{pageDescription}</description>
+        <meta name="description" content={pageDescription} />
         <meta property="og:url" content={url} />
         <meta property="og:title" content={pageTitle} />
         <meta property="og:description" content={pageDescription} />

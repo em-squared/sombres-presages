@@ -1,5 +1,6 @@
 export default {
   index: "Introduction",
+  classes: "Classes",
   about: {
     title: "About",
     type: "page",
