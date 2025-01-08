@@ -5,13 +5,33 @@ import {
   faCreativeCommonsBy,
   faCreativeCommonsSa,
 } from "@fortawesome/free-brands-svg-icons";
+import { useRouter } from "next/router";
+import { useConfig } from "nextra-theme-docs";
 
-const projectTitle = "Sombres Présages";
+export const projectTitle = "Sombres Présages";
 const projectRepository = "https://github.com/em-squared/sombres-presages";
 const authorName = "Maxime Moraine";
 const authorLink = "https://bsky.app/profile/em-squared.bsky.social";
 
 export default {
+  head() {
+    const { asPath } = useRouter();
+    const { frontMatter } = useConfig();
+    const url = process.env.URL + `${asPath}`;
+    const pageTitle = frontMatter.title || projectTitle;
+    const pageDescription =
+      frontMatter.description || "Jouer pour voir ce qui arrive";
+
+    return (
+      <>
+        <title>{pageTitle}</title>
+        <description>{pageDescription}</description>
+        <meta property="og:url" content={url} />
+        <meta property="og:title" content={pageTitle} />
+        <meta property="og:description" content={pageDescription} />
+      </>
+    );
+  },
   logo: <span>{projectTitle}</span>,
   project: {
     link: projectRepository,
