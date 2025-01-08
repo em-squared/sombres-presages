@@ -1,7 +1,7 @@
 {
-  "name": "nextra-docs-template",
+  "name": "sombres-presages",
   "version": "0.0.1",
-  "description": "Nextra docs template",
+  "description": "Site de règles pour Sombres Présages",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -9,20 +9,28 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/shuding/nextra-docs-template.git"
+    "url": "git+https://github.com/em-squared/sombres-presages.git"
   },
-  "author": "Shu Ding <g@shud.in>",
+  "author": "Maxime Moraine",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/shuding/nextra-docs-template/issues"
+    "url": "https://github.com/em-squared/sombres-presages/issues"
   },
-  "homepage": "https://github.com/shuding/nextra-docs-template#readme",
+  "homepage": "https://github.com/em-squared/sombres-presages#readme",
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.7.2",
+    "@fortawesome/free-brands-svg-icons": "^6.7.2",
+    "@fortawesome/free-regular-svg-icons": "^6.7.2",
+    "@fortawesome/free-solid-svg-icons": "^6.7.2",
+    "@fortawesome/react-fontawesome": "^0.2.2",
+    "@types/react": "^19.0.3",
     "next": "^13.0.6",
-    "nextra": "latest",
-    "nextra-theme-docs": "latest",
+    "nextra": "3.3.1",
+    "nextra-theme-docs": "3.3.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-fontawesome": "^1.7.1",
+    "supports-color": "8.1.1"
   },
   "devDependencies": {
     "@types/node": "18.11.10",
