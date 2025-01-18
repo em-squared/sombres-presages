@@ -1,5 +1,6 @@
 export default {
   index: "Introduction",
+  ascendances: "Ascendances",
   classes: "Classes",
   about: {
     title: "About",

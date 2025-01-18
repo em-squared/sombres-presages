@@ -23,7 +23,7 @@ export default {
         ? `${title} | ${projectTitle}`
         : `${projectTitle}`;
     const pageDescription =
-      frontMatter.description || "Jouer pour voir ce qui arrive";
+      frontMatter.description || "Jouer pour voir ce qui va se passer";
 
     return (
       <>
@@ -50,14 +50,18 @@ export default {
   docsRepositoryBase: projectRepository,
   footer: {
     content: (
-      <span>
-        <FontAwesomeIcon icon={faCreativeCommons} size="xl" />{" "}
-        <FontAwesomeIcon icon={faCreativeCommonsBy} size="xl" />{" "}
-        <FontAwesomeIcon icon={faCreativeCommonsSa} size="xl" /> 4.0{" "}
-        <a href={authorLink} target="_blank">
-          {authorName}
-        </a>
-      </span>
+      <div className="flex-1">
+        <div className="text-center">
+          <FontAwesomeIcon icon={faCreativeCommons} size="xl" />{" "}
+          <FontAwesomeIcon icon={faCreativeCommonsBy} size="xl" />{" "}
+          <FontAwesomeIcon icon={faCreativeCommonsSa} size="xl" /> 4.0{" "}
+        </div>
+        <div className="text-center">
+          <a href={authorLink} target="_blank">
+            {authorName}
+          </a>
+        </div>
+      </div>
     ),
   },
 };

@@ -1,1 +1,151 @@
+import { ChoiceBox } from "@components/choice-box";
+import { Credits } from "@components/credits";
+
 # Guerrier
+
+<div className="flex flex-row justify-between items-center gap-x-4 bg-green-950	rounded-lg p-4 text-gray-300">
+  <div className="text-justify lg:w-3/4">
+    _Vous êtes un maître incontesté des armes et des techniques martiales qui se
+    bat pour l’honneur, l’argent, la loyauté ou simplement pour le frisson du
+    combat. Vous combinez judicieusement mouvements d’ouverture, frappes de
+    finition et contre‐attaques dès que vos adversaires ont la mauvaise idée de
+    baisser leur garde. Que vous soyez chevalier, mercenaire, tireur d’élite ou
+    épéiste, vous avez parfait vos compétences martiales en élevant le combat au
+    rang d’art, et lancez des attaques critiques dévastatrices contre vos
+    ennemis._
+
+    - Où avez-vous appris à vous battre ? Qui vous a appris ?
+    - Quelle est la bataille la plus mémorable à laquelle vous avez participé ? Comment vous a t-elle marqué, physiquement ou psychologiquement ?
+    - Qu’est-ce qui vaut la peine de se battre ?
+    - Quelle est la dernière bataille ou guerre dans les environs ? Y étiez-vous ?
+
+  </div>
+
+  <div className="hidden lg:flex lg:flex-col text-center lg:w-1/4">![Guerrier](/img/guerrier.webp)<Credits credits="Paizo" /></div>
+</div>
+
+## Points de vie
+
+**Points de vie :** 10 + Constitution
+
+## Prime d'attribut
+
+- +1 Force ou +1 Constitution
+- +1 au choix
+
+## Maîtrises initiales
+
+**Armes :** armes simples, armes de guerre  
+**Armures :** armures légères, armures intermédiaires, armures lourdes, boucliers
+
+## Coup d'éclat <span className="text-sm hidden-toc">_(1 au choix)_</span>
+
+### <ChoiceBox exclusive /> Gardien
+
+Mettez-vous en danger pour protéger plus faible que vous
+
+### <ChoiceBox exclusive /> Seigneur de guerre
+
+Défier un ennemi valeureux en combat
+
+### <ChoiceBox exclusive /> Champion
+
+Préférez l’honneur plutôt que le profit personnel
+
+## Équipement
+
+Vous commencez avec l'équipement suivant :
+
+- une arme de corps-à-corps de guerre de votre choix, décrivez-la et précisez pourquoi elle est importante pour vous
+- <ChoiceBox /> une armure intermédiaire ou <ChoiceBox /> une armure légère et une arme simple
+- <ChoiceBox /> un bouclier ou <ChoiceBox /> un arc court
+- un sac de fournitures
+
+## Liens <span className="text-sm hidden-toc">_(posez ces questions à vos compagnons)_</span>
+
+- Lequel d’entre vous a déjà combattu avec moi ? En tant qu’allié ou adversaire ?
+- Lequel d’entre vous ai-je juré de protéger ?
+- Lequel d’entre vous est le plus susceptible de tous nous faire tuer ?
+- Lequel d’entre vous a besoin que je l’endurcisse ?
+
+## Actions de base
+
+Vous commencez avec les actions suivantes :
+
+### Style de combat
+
+Vous avez été formé à une variété de bottes et de techniques. Donnez un nom à votre style de combat et choisissez 3 manœuvres qui font partie de votre style :
+
+<ChoiceBox /> **Désarmement :** Vous désarmez votre adversaire.  
+<ChoiceBox /> **Pénétration d'armure :** Votre jet de dégâts a _+3 pénétration_.  
+<ChoiceBox /> **Garde :** Le prochain jet de dégâts effectué contre vous durant la bataille en cours subit un _désavantage_.  
+<ChoiceBox /> **Ralliement :** Vous ou un allié qui peut vous voir et vous entendre regagne 1d6 PV et se débarrasse de l'état _effrayé_.  
+<ChoiceBox /> **Destruction d’armure** : Si votre adversaire porte une armure, réduisez-la de 1, minimum 0.  
+<ChoiceBox /> **Enchaînement :** Vous infligez vos dégâts avec un _désavantage_ à un autre adversaire à portée.  
+<ChoiceBox /> **Désengagement :** Vous vous désengagez de la mêlée hors de portée de votre adversaire en faisant quelques pas, avant ou après que vous ayez tous les deux infligé vos dégâts, au choix.  
+<ChoiceBox /> **Provocation :** Vous attirez toute l’attention de l’ennemi sur vous tant que vous gardez le contact visuel.  
+<ChoiceBox /> **Attaque en puissance :** Votre attaque inflige +1 dégâts et gagne le trait _puissant_. Si votre attaque avait déjà le trait _puissant_, ça l’est encore plus.  
+
+**Quand vous rejoignez un combat**, ou **quand vous Taillez en pièce et que vous obtenez une réussite majeure**, vous accumulez 1 point de Concentration. Vous pouvez accumuler jusqu'à 3 points de Concentration maximum. **Quand le combat prend fin**, vous perdez tous vos points de Concentration restants.
+
+**Quand vous Taillez en pièces**, sur une réussite, en plus d’infliger vos dégâts, vous pouvez dépenser un point de Concentration pour effectuer une manœuvre qui fait partie de votre style de combat. Vous pouvez dépenser le point de Concentration que vous venez d'accumuler sur une réussite majeure à votre test.
+
+Quand vous atteignez le niveau 6, ajoutez 2 manœuvres de votre choix à votre style de combat.
+
+## Actions avancées
+
+Vous commencez avec l'une des actions suivantes au choix :
+
+### <ChoiceBox /> Forcer les portes et les herses
+
+**Quand vous utilisez la force brute pour détruire un obstacle inamovible**, faites un test de Force. Sur une réussite majeure, choisissez 3. Sur une réussite mineure, choisissez 2 : 
+- Ça ne prend pas trop de temps
+- Rien de valeur n’est endommagé
+- Ça ne fait pas un vacarme
+- Vous pouvez le réparer sans trop d’effort
+
+### <ChoiceBox /> Allez viens, je t’attends
+
+**Quand vous engagez le combat contre un unique adversaire**, faites un test de Force. Sur une réussite majeure, choisissez 2. Sur une réussite mineure, choisissez 1. Sur un échec, votre adversaire choisit 1 contre vous : 
+- Personne d’autre que votre adversaire ne vous attaquera, sauf si vous attaquez quelqu’un d’autre
+- Vos jets de dégâts contre lui bénéficient d’un _avantage_ jusqu’à ce que vous attaquiez quelqu’un d’autre
+- S’il attaque quelqu’un d’autre ou rompt le combat, vous pouvez lui infliger vos dégâts alors qu’il baisse sa garde
+- Vous apprenez quelque chose sur sa vraie nature, le MJ vous en dira plus.
+
+### <ChoiceBox /> Tactiques de terrain
+
+**Quand vous étudiez le champ de bataille ou un environnement dangereux**, posez deux des questions suivantes au MJ. Il répondra honnêtement.
+- Quel est le meilleur moyen d’entrer, de sortir ou de traverser ?
+- Quel est le meilleur endroit pour tenir une position défensive ?
+- Quel est le meilleur endroit pour lancer un assaut ?
+- Quelle est la plus grande menace pour moi ici ?
+- Quelle est la véritable position de l’ennemi ?
+- Quelle est l’issue la plus probable de ce combat si je n’interviens pas ?
+
+### <ChoiceBox /> Conscience tactique
+
+**Quand vous dépensez des points de Concentration**, vous pouvez immédiatement poser une question de la liste de Discerner la réalité.
+
+### <ChoiceBox /> Tenir la position
+
+Votre voix de stentor porte loin et surpasse même le vacarme de la bataille. Vous pouvez apporter votre aide à quiconque peut vous entendre avec des mots inspirants, des conseils stratégiques ou des menaces macabres, tant que vous êtes à portée de voix. De plus, **quand un allié vous Aide et vous fait bénéficier d’un _avantage_ à votre test**, vous pouvez choisir d'accumuler 1 point de Concentration au lieu de l’_avantage_.
+
+### <ChoiceBox /> Maîtrise des armures
+
+**Quand vous faites en sorte que votre armure subisse la plus grande partie des dégâts qui vous sont infligés**, les dégâts sont annulés, mais vous devez réduire la valeur d'armure de votre armure ou de votre bouclier (au choix) de 1. Si la réduction laisse l'objet avec 0 armure, il est détruit. Une armure endommagée peut être réparée avec quelques heures de travail et des matériaux appropriés (1 utilisation de fournitures).
+
+### <ChoiceBox /> Cri de guerre
+
+**Quand vous vous lancez dans la bataille avec une démonstration de force**, comme un cri de guerre, choisissez 2 :
+- Vos alliés bénéficient d'un _avantage_ lors de leur prochaine action à suivre
+- Vous accumulez 1 point de Concentration supplémentaire
+- Vos ennemis ressentent de la peur et agissent en conséquence (vous évitent, se cachent, attaquent avec l’énergie du désespoir, etc.)
+- Vos ennemis vous traitent comme la menace la plus évidente à laquelle il faut faire face, ignorant vos alliés jusqu'à ce qu'ils attirent l'attention
+
+## Action de maîtrise
+
+Vous pouvez choisir cette action à partir du niveau 6
+
+### <ChoiceBox /> Suprématie martiale
+
+**Quand vous Taillez en pièces**, sur une réussite critique vous infligez vos dégâts, évitez l’attaque adverse, impressionnez, consternez ou effrayez votre ennemi. Décrivez comment vous le faites.
